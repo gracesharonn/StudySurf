@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ :root {
+    --main-color: #F1853E;
+    --red: #e74c3c;
+    --orange: #f39c12;
+    --light-color: #888;
+    --light-bg: #FFE9D3;
+    --black: #040172;
+    --white: #FFFFFF;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+ }
+ 
+ * {
+    font-family: 'Poppins';
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+ }
+
+ .latex-content {
+   color: white;
+   font-size: 50px;
+   font-family: 'Poppins';
+ }
+ 
+ *::selection {
+    background-color: var(--main-color);
+    color: #fff;
+ }
+ 
+ html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+ 
+ html::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+ }
+ 
+ html::-webkit-scrollbar-track {
+    background-color: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+ }
+ 
+ body {
+    background-color: var(--light-bg);
+    padding-left: 30rem;
+ }
+ 
+ body.dark {
+    --light-color: #aaa;
+    --light-bg: #333;
+    --black: #fff;
+    --white: #222;
+    --border: .1rem solid rgba(255, 255, 255, .2);
+ }
+ 
+ body.active {
+    padding-left: 0;
+ }
+ 
+ /* home page */
+ #homepage-signin {
+   position: absolute;
+   right: 1.5%;
+   top: 3rem;
+   font-size: 3rem;
+   font-weight: 700;
+}
+ 
+ .Intro {
+    display: grid;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+ }
+ 
+ .Intro-box {
+    padding: 1rem;
+ }
+ 
+ .Intro-box h1 {
+    font-size: 6rem;
+ }
+ 
+ .Intro-box h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+ }
+ 
+ .Intro-box .inline-btn {
+    font-size: 3rem;
+    border-radius: 50px;
+    padding: 15px;
+ }
+ 
+ .features {
+    display: flex;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 130px;
+ }
+ 
+ .feature-box {
+    display: grid;
+    place-items: center;
+    gap: 3em;
+    width: 200px;
+    text-align: center;
+ }
+ 
+ .feature-btn {
+    padding-top: 1em;
+ }
+ 
+ .feature-box h1{
+    font-size: 3em;
+    font-weight: 700;
+ }
+
+ .feature-box img {
+   width: 350px;
+ }
+
+ .top-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
