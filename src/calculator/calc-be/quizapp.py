@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="input_api_key")
 from fastapi import FastAPI
 from pydantic import BaseModel
 
