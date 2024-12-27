@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .ocr-scanner{
+    max-width: 600px;
+    width: 100%;
+    background-color: var(--black);
+    padding: 50px;
+    padding-bottom: 80px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; 
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .ocr-scanner h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+  
+  .ocr-scanner h2 {
+    text-align: center;
+    color: #555;
+    font-size: 1.5rem;
+  }
+  
+  .ocr-scanner ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2em;
+  }
+  
+  .ocr-scanner li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .ocr-scanner .error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* File input and buttons */
+  .ocr-scanner input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 25px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--black);
+  }
+  
+  .ocr-scanner button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .ocr-scanner button:hover {
+    background-color: var(--light-bg);
+    color: var(--black);
+  }
+  
+  .ocr-scanner button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Back button */
+  .ocr-scanner .back-button {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+  }
+  
+  .ocr-scanner .back-button:hover {
+    background-color: var(--light-bg);
+    color: var(--black);
+  }
+  
+  /* Center content */
+  .ocr-scanner div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
